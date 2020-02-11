@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CustomizedTransition from './customizedTransition';
+// import ControlledCarosel from './controlledCarousel';
 
 class Profile extends Component {
     state = {
@@ -42,6 +43,9 @@ class Profile extends Component {
                       </div>
                     </div>
                   </div>
+                  {/* <ControlledCarosel /> */}
+                  
+
                 </div>
 
               </main>
