@@ -14,24 +14,6 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 // `;
 
 function App() {
-  // return(
-  //   <Router>
-  //     <React.Fragment>    
-  //         <header className="masthead mb-auto">
-  //           <div className="inner">
-  //             <h3 className="masthead-brand">University of Waterloo</h3>
-  //             <NavBar />
-  //           </div>
-  //         </header>
-          
-  //       <Switch>
-  //         <Route path="/" exact component={Home}/>
-  //         <Route path="/profile" component={Profile}/>
-  //       </Switch>
-  
-  //     </React.Fragment>
-  //   </Router>
-  // );
 
   return (
     <Router>
