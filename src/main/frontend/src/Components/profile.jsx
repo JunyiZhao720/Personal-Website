@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CustomizedTransition from './customizedTransition';
-// import ControlledCarosel from './controlledCarousel';
+import ControlledCarosel from './controlledCarousel';
+
 
 class Profile extends Component {
     state = {
@@ -25,7 +26,7 @@ class Profile extends Component {
                 </div>     
 
                 <div className="col-sm">
-                  <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
+                  {/* <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
                       <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -42,8 +43,8 @@ class Profile extends Component {
                         <img className="d-block w-100" src="https://vignette.wikia.nocookie.net/kpop/images/c/cf/Taeyeon_%28Purpose%29_promo_photo_1.png/revision/latest?cb=20200110034639" alt="Third slide"/>
                       </div>
                     </div>
-                  </div>
-                  {/* <ControlledCarosel /> */}
+                  </div> */}
+                  <ControlledCarosel />
                   
 
                 </div>
