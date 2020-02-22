@@ -1,16 +1,3 @@
-.App {
-    text-align: center;
-  }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 /*
  * Globals
@@ -22,18 +9,6 @@ a:focus,
 a:hover {
   color: #fff;
 }
-
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
-
 
 /*
  * Base structure
@@ -120,7 +95,7 @@ body {
   color: rgba(255, 255, 255, .5);
 }
 
-
+/*                       fade                       */
 /* appear - on page load */
 .fade-appear{
     opacity: 0;
@@ -154,23 +129,42 @@ body {
 }
 
 
-.alert-enter {
-  opacity: 0;
-  transform: scale(0.9);
+/* Page */
+
+/* .page {
+  height: 100vh;
+  padding: calc(15% + 1.5em) 5% 5%;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  transition: transform 1s ease-in-out;
+} */
+
+/* .page-enter {
+  transform: translate(-100%, 0);
 }
-.alert-enter-active {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity 300ms 2000ms transform 300ms;
+
+.page-enter-active {
+  transform: translate(0, 0);
 }
-.alert-exit {
-  opacity: 1;
+
+.page-exit {
+  transform: translate(-100%, 0);
 }
-.alert-exit-active {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 300ms, transform 300ms;
+
+.page--prev.page-enter {
+  transform: translate(100%, 0);
 }
+
+.page--prev.page-enter-active {
+  transform: translate(0, 0);
+}
+
+.page--prev.page-exit {
+  transform: translate(100%, 0);
+} */
 
 
 

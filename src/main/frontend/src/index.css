@@ -11,13 +11,13 @@ a:hover {
 
 
 /* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
-  border: .05rem solid #fff;
+  border: 1px solid #fff;
 }
 
 
@@ -98,6 +98,11 @@ body {
   font-weight: 700;
 }
 
+.page {
+  position: sticky; /* or absolute */
+  top: 30%;
+  left: -20%;
+}
 
 /*
  * Footer
