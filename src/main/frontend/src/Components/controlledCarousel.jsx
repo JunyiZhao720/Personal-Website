@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Carousel from 'react-bootstrap/Carousel'
  
 
 function ControlledCarousel() {
@@ -11,11 +12,11 @@ function ControlledCarousel() {
     };
   
     return (
-      <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
+      <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} interval={1000}>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
+            src="https://6.viki.io/image/d4d793d461a44437a8c96bfd6e7f00b3.jpeg?s=900x600&e=t"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -26,7 +27,7 @@ function ControlledCarousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
+            src="https://img.kpopmap.com/2019/05/Girls-Generation-Taeyeon.jpg"
             alt="Second slide"
           />
   
@@ -38,7 +39,7 @@ function ControlledCarousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
+            src="https://kpopreviewed.files.wordpress.com/2019/11/taeyeon-purpose-1.jpeg?w=1200"
             alt="Third slide"
           />
   
