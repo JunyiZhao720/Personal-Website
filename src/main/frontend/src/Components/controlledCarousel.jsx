@@ -39,7 +39,7 @@ function ControlledCarousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://i.pinimg.com/originals/30/ed/23/30ed235f9e92a084ebc690d67ceaf39a.jpg"
+            src="https://kpopreviewed.files.wordpress.com/2019/11/taeyeon-purpose-1.jpeg?w=1200"
             alt="Third slide"
           />
   

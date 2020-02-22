@@ -1,16 +1,3 @@
-.App {
-    text-align: center;
-  }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 /*
  * Globals
@@ -22,18 +9,6 @@ a:focus,
 a:hover {
   color: #fff;
 }
-
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
-
 
 /*
  * Base structure
@@ -167,7 +142,7 @@ body {
   transition: transform 1s ease-in-out;
 } */
 
-.page-enter {
+/* .page-enter {
   transform: translate(-100%, 0);
 }
 
@@ -189,7 +164,7 @@ body {
 
 .page--prev.page-exit {
   transform: translate(100%, 0);
-}
+} */
 
 
 

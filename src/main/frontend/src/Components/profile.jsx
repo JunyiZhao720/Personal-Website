@@ -13,7 +13,7 @@ class Profile extends Component {
     render() { 
         return (
           <React.Fragment>
-            <CustomizedTransition timeout={20000} classNames={"page"} >
+            <CustomizedTransition timeout={2000} classNames={"fade"} >
 
               <main role="main" className="row inner cover">
 
