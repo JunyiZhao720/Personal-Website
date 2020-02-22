@@ -8,14 +8,15 @@ import React,{Component} from "react";
 import About from "./Manage/about";
 import User from "./Manage/user";
 import Blog from "./Manage/blog";
-import './Manage/manage1.css'
+import './Manage/manager.css'
+import Container from 'react-bootstrap/Container'
 
 export default class Manager extends Component {
 
     render() {
         return(
 
-            <div>
+            <div className="jumbotron">
                 <div className="row">
                     <div className="col-xs-offset-2 col-xs-8">
                         <div className="page-header">

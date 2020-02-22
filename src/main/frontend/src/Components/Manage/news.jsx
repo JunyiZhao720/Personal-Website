@@ -24,7 +24,7 @@ export default class News extends Component {
 
                     {
                        this.state. news.map((n,index)=>(
-                           <li key={index}>
+                           <li className="text-left" key={index}>
                               <a> {n.title}</a>
                            </li>
                            )
