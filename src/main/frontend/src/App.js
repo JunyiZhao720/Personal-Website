@@ -3,7 +3,8 @@ import './App.css';
 import Home from './Components/home';
 import NavBar from './Components/navBar';
 import Profile from './Components/profile';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Manager from './Components/manager';
+import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 
 // const PageContainer = styled.div`
 //   position: relative;
@@ -25,11 +26,14 @@ function App() {
           </div>
         </header>
           <Switch>
-            <Route path="/" exact component={Home}/>
+            <Route exact path="/"  component={Home}/>
             <Route path="/profile" component={Profile}/>
+            <Route path="/manager" component={Manager} />
+            <Redirect to = "/manager" />
           </Switch>
       </React.Fragment>
     </Router>
+    
   );
 }
 

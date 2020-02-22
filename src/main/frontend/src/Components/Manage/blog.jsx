@@ -16,16 +16,16 @@ export default class Blog extends Component {
                 <div>
                     <ul className="nav nav-tabs">
                         <li>
-                            <NavLink to='/blog/news'>News</NavLink>
+                            <NavLink to='/manager/blog/news'>News</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/blog/diary">Diary</NavLink>
+                            <NavLink to="/manager/blog/diary">Diary</NavLink>
                         </li>
                     </ul>
                     <Switch>
-                        <Route path='/blog/news' component={News} />
-                        <Route path='/blog/diary' component={Diary} />
-                        <Redirect to='/blog/news'/>
+                        <Route path='/manager/blog/news' component={News} />
+                        <Route path='/manager/blog/diary' component={Diary} />
+                        <Redirect to='/manager/blog/news'/>
                     </Switch>
                 </div>
             </div>
