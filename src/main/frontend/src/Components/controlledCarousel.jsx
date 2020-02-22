@@ -12,7 +12,7 @@ function ControlledCarousel() {
     };
   
     return (
-      <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
+      <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} interval={1000}>
         <Carousel.Item>
           <img
             className="d-block w-100"

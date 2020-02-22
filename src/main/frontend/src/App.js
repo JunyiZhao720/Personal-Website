@@ -3,20 +3,16 @@ import './App.css';
 import Home from './Components/home';
 import NavBar from './Components/navBar';
 import Profile from './Components/profile';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-
-// const PageContainer = styled.div`
-//   position: relative;
-//   width: 100vw;
-//   height: 100vh;
-//   background-color: #e3f2fd;
-//   font-family: "Open Sans", sans-serif;
-// `;
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import { 
+  CSSTransition, 
+  TransitionGroup 
+} from 'react-transition-group';
 
 function App() {
 
   return (
-    <Router>
+    <BrowserRouter>
       <React.Fragment>
         <header className="masthead mb-auto">
           <div className="inner">
@@ -25,11 +21,11 @@ function App() {
           </div>
         </header>
           <Switch>
-            <Route path="/" exact component={Home}/>
+            <Route exact path="/" component={Home}/>
             <Route path="/profile" component={Profile}/>
           </Switch>
       </React.Fragment>
-    </Router>
+    </BrowserRouter>
   );
 }
 
