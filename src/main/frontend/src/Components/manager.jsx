@@ -8,7 +8,7 @@ import React,{Component} from "react";
 import About from "./Manage/about";
 import User from "./Manage/user";
 import Blog from "./Manage/blog";
-import './Manage/manager.css'
+// import './Manage/manager.css'
 import Container from 'react-bootstrap/Container'
 
 export default class Manager extends Component {
@@ -18,7 +18,7 @@ export default class Manager extends Component {
 
             <div className="jumbotron">
                 <div className="row">
-                    <div className="col-xs-offset-2 col-xs-8">
+                    <div className="">
                         <div className="page-header">
                             <h2>Website Demo</h2>
                         </div>
@@ -26,7 +26,7 @@ export default class Manager extends Component {
                 </div>
 
                 <div className="row">
-                    <div className="col-xs-2 col-xs-offset-2">
+                    <div className="">
                         <div className="list-group">
                             {/*导航路由链接*/}
                             <NavLink className="list-group-item" to='/manager/about'>About</NavLink>
@@ -34,9 +34,9 @@ export default class Manager extends Component {
                             <NavLink className="list-group-item" to='/manager/Blog'>Blog</NavLink>
                         </div>
                     </div>
-                    <div className="col-xs-6">
+                    <div className="">
                         <div className="panel">
-                            <div className="panel-body">
+                            <div className="panel-body" style={{padding:15}}>
                                 {/*可切换的路由组件*/}
                                 <Switch>
                                     <Route path='/manager/about' component={About}/>

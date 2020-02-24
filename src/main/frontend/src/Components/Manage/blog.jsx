@@ -5,7 +5,7 @@ import {
     NavLink,
     Redirect
 } from "react-router-dom";
-import News from "./news";
+import Newpost from "./newpost";
 import Diary from "./diary";
 export default class Blog extends Component {
 
@@ -16,14 +16,14 @@ export default class Blog extends Component {
                 <div>
                     <ul className="nav nav-tabs">
                         <li>
-                            <NavLink to='/manager/blog/news'>News</NavLink>
+                            <NavLink to='/manager/blog/news' style={{paddingLeft:10}}>New</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/manager/blog/diary">Diary</NavLink>
+                            <NavLink to="/manager/blog/diary" style={{paddingLeft:10}}>Edit</NavLink>
                         </li>
                     </ul>
                     <Switch>
-                        <Route path='/manager/blog/news' component={News} />
+                        <Route path='/manager/blog/news' component={Newpost} />
                         <Route path='/manager/blog/diary' component={Diary} />
                         <Redirect to='/manager/blog/news'/>
                     </Switch>
