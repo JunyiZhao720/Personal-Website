@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Home from './Components/home';
 import NavBar from './Components/navBar';
 import Profile from './Components/profile';
@@ -16,18 +15,22 @@ function App() {
   return (
     <BrowserRouter>
       <React.Fragment>
+        {/* control pages */}
+        <Switch>
+          <Route path="/manager" component={Manager} />
+        </Switch>
+
+        {/* content pages */}
         <header className="masthead mb-auto">
           <div className="inner">
             <h3 className="masthead-brand">University of Waterloo</h3>
             <NavBar />
           </div>
         </header>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/profile" component={Profile} />
-            <Route path="/manager" component={Manager} />
-            {/* <Redirect to = "/manager" /> */}
-          </Switch>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/profile" component={Profile} />
+        </Switch>
       </React.Fragment>
     </BrowserRouter>
 
