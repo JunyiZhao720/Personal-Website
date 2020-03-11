@@ -3,11 +3,9 @@ import Home from './Components/home';
 import NavBar from './Components/navBar';
 import Profile from './Components/profile';
 import Manager from './Components/manager';
+import Login from './Components/login';
+import PrivateRoute from './Components/Manage/privateRoute'
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
-import { 
-  CSSTransition, 
-  TransitionGroup 
-} from 'react-transition-group';
 
 
 function App() {
@@ -15,12 +13,13 @@ function App() {
   return (
     <BrowserRouter>
       <React.Fragment>
-        {/* control pages */}
+        {/* protected pages */}
         <Switch>
-          <Route path="/manager" component={Manager} />
+          <PrivateRoute path="/manager" component={Manager} isAuthenticated={ false } redirectPath="/login"/>
+          <Route path="/login" component={Login} />
         </Switch>
 
-        {/* content pages */}
+        {/* public pages */}
         <header className="masthead mb-auto">
           <div className="inner">
             <h3 className="masthead-brand">University of Waterloo</h3>
