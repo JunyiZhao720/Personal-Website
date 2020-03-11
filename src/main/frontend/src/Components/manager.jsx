@@ -5,9 +5,9 @@ import {
     Redirect
 } from "react-router-dom";
 import React,{Component} from "react";
-import About from "./Manage/about";
-import User from "./Manage/user";
-import Blog from "./Manage/blog";
+import About from "./Manager/about";
+import User from "./Manager/user";
+import Blog from "./Manager/blog";
 // import './Manage/manager.css'
 import Container from 'react-bootstrap/Container'
 
