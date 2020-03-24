@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {login} from '../Redux/acitons';
-import {Redirect} from 'react-router-dom'
 class Login extends Component {
   state = {
 
@@ -13,7 +12,7 @@ class Login extends Component {
 
     this.setState({[name]:val})
     console.log(this.state)
-}
+  }
   Login =()=>{
     this.props.login(this.state)
 
@@ -33,18 +32,18 @@ class Login extends Component {
             <div className="col-md-6 col-sm-4 col-xs-12">
               <form className="login-form-container">
                 <div className="form-group">
-                  <label for="exampleInputEmail1">Email</label>
+                  <label htmlFor="exampleInputEmail1">Email</label>
                   <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                          placeholder="Enter email" name="email" />
                   <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div className="form-group">
-                  <label for="exampleInputPassword1">Password</label>
+                  <label htmlFor="exampleInputPassword1">Password</label>
                   <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" name="password"/>
                 </div>
                 <div className="form-check">
                   <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                  <label className="form-check-label" for="exampleCheck1">Remember me</label>
+                  <label className="form-check-label" htmlFor="exampleCheck1">Remember me</label>
                 </div>
                 <button type="submit" className="btn btn-primary" onClick={this.Login}>Submit</button>
               </form>

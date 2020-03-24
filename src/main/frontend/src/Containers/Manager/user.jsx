@@ -1,8 +1,4 @@
-import {render} from 'react-dom'
 import React,{Component} from "react"
-import {NavLink, Redirect, Route, Switch} from "react-router-dom";
-import Newpost from "./newpost";
-import Diary from "./diary";
 export default class User extends Component {
 
     render() {
