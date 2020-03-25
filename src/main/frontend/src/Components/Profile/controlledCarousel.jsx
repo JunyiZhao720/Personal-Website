@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
- 
+import ajax from '../../Api/ajax'
+import axios from 'axios'
 
 function ControlledCarousel() {
     const [index, setIndex] = useState(0);
@@ -13,7 +14,8 @@ function ControlledCarousel() {
           id: i,
           title:"null" ,
           description: "null",
-          imageSrc: "https://6.viki.io/image/d4d793d461a44437a8c96bfd6e7f00b3.jpeg?s=900x600&e=t"
+          imageSrc: "https://6.viki.io/image/d4d793d461a44437a8c96bfd6e7f00b3.jpeg?s=900x600&e=t",
+          newsSrc: "www.google.com"
         }
       );
     }
@@ -31,11 +33,24 @@ function ControlledCarousel() {
       ]);
     }
 
+    // ComponentDidMount()
+    useEffect(() => {
+      async function fetchData() {
+        // You can await here
+        const response = await axios.get("/api/news");
+        // ...
+        setNews(response.data);
+      }
+      fetchData();
+      // ajax('https://localhost:8080/api/news',{},'Get')
+
+    }, []);
+
 
     return (
       <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} interval={1000}>
         { news.map(n => 
-                  <Carousel.Item>
+                  <Carousel.Item key={n.id}>
                     <img
                       className="d-block w-100"
                       src = { n.imageSrc }
