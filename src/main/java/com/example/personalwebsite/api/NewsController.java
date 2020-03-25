@@ -15,15 +15,15 @@ public class NewsController {
             new News("Taeyeon One",
                     "Taeyeon One is the most beautiful girl over the world",
                     "https://6.viki.io/image/d4d793d461a44437a8c96bfd6e7f00b3.jpeg?s=900x600&e=t",
-                    "www.google.com"),
+                    "http://www.baidu.com"),
             new News("Taeyeon Two",
                     "Taeyeon Two is the most beautiful girl over the world",
                     "https://img.kpopmap.com/2019/05/Girls-Generation-Taeyeon.jpg",
-                    "www.google.com"),
+                    "http://www.youtube.com"),
             new News("Taeyeon Three",
                     "Taeyeon Three is the most beautiful girl over the world",
                     "https://img.kpopmap.com/2019/05/Girls-Generation-Taeyeon.jpg",
-                    "www.google.com")
+                    "http://www.bilibili.com")
         };
     }
 }

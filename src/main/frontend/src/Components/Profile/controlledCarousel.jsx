@@ -15,7 +15,7 @@ function ControlledCarousel() {
           title:"null" ,
           description: "null",
           imageSrc: "https://6.viki.io/image/d4d793d461a44437a8c96bfd6e7f00b3.jpeg?s=900x600&e=t",
-          newsSrc: "www.google.com"
+          newsSrc: "http://www.google.com"
         }
       );
     }
@@ -26,10 +26,10 @@ function ControlledCarousel() {
       setDirection(e.direction);
     };
 
-    const addOrUpdateNews = (id, title, description, imageSrc) => {
+    const addOrUpdateNews = (id, title, description, imageSrc, newsSrc) => {
       setNews([
         ...news,
-        { id, title, description, imageSrc }
+        { id, title, description, imageSrc, newsSrc }
       ]);
     }
 
@@ -50,7 +50,7 @@ function ControlledCarousel() {
     return (
       <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} interval={1000}>
         { news.map(n => 
-                  <Carousel.Item key={n.id}>
+                  <Carousel.Item key={n.id} onClick={()=> window.open( n.newsSrc , "_blank")}>
                     <img
                       className="d-block w-100"
                       src = { n.imageSrc }
