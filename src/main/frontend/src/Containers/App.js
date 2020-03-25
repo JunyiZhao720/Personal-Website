@@ -44,7 +44,7 @@ import {login} from "../Redux/acitons";
                   <Route path="/profile" component={Profile} />
                   <Route path="/login" component={Login} />
                   {/*<Route path="/manager" component={Manager} />*/}
-                  <PrivateRoute path="/manager" component={Manager} isAuthenticated={ false } redirectPath="/login"/>
+                  <PrivateRoute path="/manager" component={Manager} isAuthenticated={ true } redirectPath="/login"/>
                 </Switch>
               </React.Fragment>
             </BrowserRouter>

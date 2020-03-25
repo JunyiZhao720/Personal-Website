@@ -12,11 +12,14 @@ class Profile extends Component {
     };
     render() { 
         return (
-          <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <Header />
+          <div >
+            <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+              <Header />
+            </div>
+            
             <CustomizedTransition timeout={2000} classNames={"fade"} >
 
-              <main role="main" className="row inner cover">
+              <main role="main" className="row">
 
                 <div className="col-sm">
                   <h1 className="cover-heading">{this.state.main_title}</h1>
@@ -33,7 +36,7 @@ class Profile extends Component {
               </main>
             </CustomizedTransition>
           
-          <footer className="mastfoot mt-auto">
+          <footer className="mastfoot fixed-bottom">
             <div className="inner">
             <p>{this.state.footer_contact} <a href={this.state.footer_address}>{ this.state.main_title }</a></p>
             </div>

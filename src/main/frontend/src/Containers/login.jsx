@@ -25,32 +25,35 @@ class Login extends Component {
       }
 
       return (
-        <div className="container-fluid">
-          <p>You must log in to view the page</p>
-          <div className="row">
-            <div className="col-md-4 col-sm-4 col-xs-12"></div>
-            <div className="col-md-6 col-sm-4 col-xs-12">
-              <form className="login-form-container">
-                <div className="form-group">
-                  <label htmlFor="exampleInputEmail1">Email</label>
-                  <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                         placeholder="Enter email" name="email" />
-                  <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="exampleInputPassword1">Password</label>
-                  <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" name="password"/>
-                </div>
-                <div className="form-check">
-                  <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                  <label className="form-check-label" htmlFor="exampleCheck1">Remember me</label>
-                </div>
-                <button type="submit" className="btn btn-primary" onClick={this.Login}>Submit</button>
-              </form>
+        <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+          <div className="container-fluid">
+            <p>You must log in to view the page</p>
+            <div className="row">
+              <div className="col-md-4 col-sm-4 col-xs-12"></div>
+              <div className="col-md-6 col-sm-4 col-xs-12">
+                <form className="login-form-container">
+                  <div className="form-group">
+                    <label htmlFor="exampleInputEmail1">Email</label>
+                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                          placeholder="Enter email" name="email" />
+                    <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="exampleInputPassword1">Password</label>
+                    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" name="password"/>
+                  </div>
+                  <div className="form-check">
+                    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                    <label className="form-check-label" htmlFor="exampleCheck1">Remember me</label>
+                  </div>
+                  <button type="submit" className="btn btn-primary" onClick={this.Login}>Submit</button>
+                </form>
+              </div>
+              <div className="col-md-4 col-sm-4 col-xs-12"></div>
             </div>
-            <div className="col-md-4 col-sm-4 col-xs-12"></div>
           </div>
         </div>
+        
       )
     }
   }
