@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CustomizedTransition from './customizedTransition';
+import Header from './header';
 
 class Home extends Component {
     state = {
@@ -15,7 +16,8 @@ class Home extends Component {
 
     render() { 
         return (
-          <React.Fragment>
+          <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <Header />
             <CustomizedTransition timeout={2000} classNames={"fade"} >
               <main role="main" className="inner cover">
                 <h1 className="cover-heading">{this.state.main_title}</h1>
@@ -31,7 +33,7 @@ class Home extends Component {
                 <p>{this.state.footer_contact} <a href={this.state.footer_address}>{ this.state.main_title }</a></p>
               </div>
             </footer>
-          </React.Fragment>
+          </div>
         );
     }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CustomizedTransition from './customizedTransition';
-import ControlledCarosel from './controlledCarousel';
-
+import ControlledCarosel from './Profile/controlledCarousel';
+import Header from './header';
 
 class Profile extends Component {
     state = {
@@ -12,7 +12,8 @@ class Profile extends Component {
     };
     render() { 
         return (
-          <React.Fragment>
+          <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <Header />
             <CustomizedTransition timeout={2000} classNames={"fade"} >
 
               <main role="main" className="row inner cover">
@@ -37,7 +38,7 @@ class Profile extends Component {
             <p>{this.state.footer_contact} <a href={this.state.footer_address}>{ this.state.main_title }</a></p>
             </div>
             </footer>
-          </React.Fragment>
+          </div >
         );
     }
 }

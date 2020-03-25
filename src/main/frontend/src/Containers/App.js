@@ -1,5 +1,4 @@
 import Home from '../Components/home';
-import Header from '../Components/header';
 import Profile from '../Components/profile';
 import Manager from './Manager/manager';
 import Login from './login';
@@ -40,7 +39,6 @@ import {login} from "../Redux/acitons";
         return(
             <BrowserRouter>
               <React.Fragment>
-                <Header />
                 <Switch>
                   <Route exact path="/" component={Home} />
                   <Route path="/profile" component={Profile} />
