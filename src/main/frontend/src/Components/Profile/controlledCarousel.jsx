@@ -21,25 +21,24 @@ function ControlledCarousel() {
     }
     const [news, setNews] = useState(initializeNews);
   
-    const handleSelect = (selectedIndex, e) => {
+    const handleSelect = (selectedIndex) => {
       setIndex(selectedIndex);
-      setDirection(e.direction);
     };
 
-    const addOrUpdateNews = (id, title, description, imageSrc, newsSrc) => {
-      setNews([
-        ...news,
-        { id, title, description, imageSrc, newsSrc }
-      ]);
-    }
+    // const addOrUpdateNews = (id, title, description, imageSrc, newsSrc) => {
+    //   setNews([
+    //     ...news,
+    //     { id, title, description, imageSrc, newsSrc }
+    //   ]);
+    // }
 
-    // ComponentDidMount()
+    //ComponentDidMount()
     useEffect(() => {
       async function fetchData() {
         // You can await here
         const response = await axios.get("/api/news");
         // ...
-        setNews(response.data);
+        // setNews(response.data);
       }
       fetchData();
       // ajax('https://localhost:8080/api/news',{},'Get')
@@ -48,7 +47,7 @@ function ControlledCarousel() {
 
 
     return (
-      <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} interval={1000}>
+      <Carousel activeIndex={index} onSelect={handleSelect} interval={1000}>
         { news.map(n => 
                   <Carousel.Item key={n.id} onClick={()=> window.open( n.newsSrc , "_blank")}>
                     <img
@@ -63,7 +62,7 @@ function ControlledCarousel() {
                   </Carousel.Item>
           ) }
 
-        {/* <Carousel.Item>
+         {/* <Carousel.Item>
           <img
             className="d-block w-100"
             src="https://img.kpopmap.com/2019/05/Girls-Generation-Taeyeon.jpg"
