@@ -6,7 +6,6 @@ import '../../../css/blog/articlearea.css';
 const ArticleBanner = () => (
   <div className="blog-article-banner">
     <h1>welcome to my blog ~</h1>
-    <p>leetcode ~</p>
   </div>
 );
 

@@ -17,7 +17,7 @@ class Profile extends Component {
 
               <main role="main" className="row inner cover">
 
-                <div className="col-sm-8">
+                <div className="col-sm-7">
                   <h1 className="cover-heading">{this.state.main_title}</h1>
                   <p className="lead">{this.state.main_description}</p>
                   <p className="lead">
