@@ -23,19 +23,12 @@ class Profile extends Component {
               <main role="main" className="row">
 
                 <div className="col-sm-7">
-                  <h1 className="cover-heading">{this.state.main_title}</h1>
-                  <p className="lead">{this.state.main_description}</p>
-                  <p className="lead">
-                    <a href="/" className="btn btn-lg btn-secondary">Home</a>
-                  </p>
                   <BlogIndex />
                 </div>     
 
                 <div className="col-sm">
-                  <ControlledCarosel />
-                
+                  <ControlledCarosel /> 
                 </div>
-
               </main>
             </CustomizedTransition>
           
@@ -44,7 +37,7 @@ class Profile extends Component {
             <p>{this.state.footer_contact} <a href={this.state.footer_address}>{ this.state.main_title }</a></p>
             </div>
             </footer>
-            
+
           </div >
 
         );

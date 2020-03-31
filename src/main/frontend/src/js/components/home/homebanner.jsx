@@ -16,7 +16,7 @@ class HomeBanner extends Component {
 
     render() { 
         return (
-          <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+          <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" >
             <Header />
             <CustomizedTransition timeout={2000} classNames={"fade"} >
               <main role="main" className="inner cover">

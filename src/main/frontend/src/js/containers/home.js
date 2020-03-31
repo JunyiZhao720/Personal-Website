@@ -4,9 +4,9 @@ import HomeBanner from '../components/home/homebanner';
 export default class Home extends React.Component {
   render() {
     return (
-      <div>
+      <React.Fragment >
         <HomeBanner />
-      </div>
+      </React.Fragment>
     );
   }
 }
