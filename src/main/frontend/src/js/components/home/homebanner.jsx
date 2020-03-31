@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CustomizedTransition from './customizedTransition';
 import Header from '../header/header';
 
-class Home extends Component {
+class HomeBanner extends Component {
     state = {
         main_title: "University Of Waterloo",
         main_description: "The University of Waterloo (commonly referred to as Waterloo, UW, or UWaterloo) is a public research university with a main campus in Waterloo, Ontario, Canada. The main campus is on 404 hectares (998 acres) of land adjacent to Uptown Waterloo and Waterloo Park.",
@@ -38,4 +38,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default HomeBanner;
