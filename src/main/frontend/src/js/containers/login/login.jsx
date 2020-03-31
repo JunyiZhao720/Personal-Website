@@ -5,16 +5,24 @@ import {login} from '../../actions/acitons';
 class Login extends Component {
   state = {
 
-    password:"123456",//default user state
+    password:"123",//default user state
     email:"123@qq.com"
 
   }
-  handleChange=(name,val)=>{
+  handleChange=(event)=>{
 
-    this.setState({[name]:val})
-    console.log(this.state)
+    this.setState({password:event.target.value}, ()=> console.log(this.state))
+
+
+  }
+  handleChange2=(event)=>{
+
+    this.setState({email:event.target.value}, ()=> console.log(this.state))
+
+
   }
   Login =()=>{
+    console.log(this.state);
     this.props.login(this.state)
 
   }
@@ -35,13 +43,14 @@ class Login extends Component {
                 <form className="login-form-container">
                   <div className="form-group">
                     <label htmlFor="exampleInputEmail1">Email</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                          placeholder="Enter email" name="email" />
+                    <input  onChange={this.handleChange2} value={this.state.email} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Enter email" name="email" />
                     <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                   </div>
                   <div className="form-group">
                     <label htmlFor="exampleInputPassword1">Password</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" name="password"/>
+                    <input  onChange={this.handleChange} value = {this.state.password} type="password" className="form-control" id="exampleInputPassword1"
+                            placeholder="Password" name="password"/>
                   </div>
                   <div className="form-check">
                     <input type="checkbox" className="form-check-input" id="exampleCheck1" />
@@ -54,7 +63,7 @@ class Login extends Component {
             </div>
           </div>
         </div>
-        
+
       )
     }
   }

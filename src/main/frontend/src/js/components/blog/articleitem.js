@@ -1,6 +1,6 @@
 import React from 'react';
-import Icon  from '@ant-design/icons';
-import { Link } from 'react-router-dom';
+ import Icon  from '@ant-design/icons';
+import {Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ArticleLabel from './articlelabel';
 
@@ -34,7 +34,9 @@ export default class ArticleItem extends React.Component {
           </p>
         </div>
       </div>
-    );
+     );
+
+
   }
 }
 

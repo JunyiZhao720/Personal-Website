@@ -14,7 +14,7 @@ export const login = (user)=>{
    return async dispath=>{
            const response = await reqLogin(user);//ajax requirement
            const result = response.data;
-           if(result.email){
+           if(result){
                dispath(authSuccess(result));
            }else{
                dispath(errorMsg("failed to login "))

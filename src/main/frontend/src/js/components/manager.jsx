@@ -5,9 +5,9 @@ import {
     Redirect
 } from "react-router-dom";
 import React,{Component} from "react";
-import About from "./Manager/about";
-import User from "./Manager/user";
-import Blog from "./Manager/blog";
+import About from "../containers/Manager/about";
+import User from "../containers/Manager/user";
+import Blog from "../containers/Manager/blog";
 // import './Manage/manager.css'
 
 export default class Manager extends Component {
@@ -49,7 +49,7 @@ export default class Manager extends Component {
                     </div>
                 </div>
             </div>
-            
+
         )
     }
 

@@ -13,7 +13,7 @@ const initUser ={
 function user(state=initUser,action){
     switch (action.type) {
         case AUTH_SUCCESS:
-            return action.data;
+            return {...initUser,...action.data};
         case ERROR_MSG:
             return {...initUser, msg: action.data};
         default:
@@ -26,7 +26,7 @@ function issues(state = {
   items: [],
 }, action) {
   switch (action.type) {
-      
+
     case REQUEST_ISSUES:
       return Object.assign({}, state, {
         isFetching: true,
