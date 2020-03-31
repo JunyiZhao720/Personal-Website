@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import {login} from '../Redux/acitons';
+import {login} from '../../actions/acitons';
+
 class Login extends Component {
   state = {
 

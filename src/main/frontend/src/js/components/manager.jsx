@@ -5,9 +5,9 @@ import {
     Redirect
 } from "react-router-dom";
 import React,{Component} from "react";
-import About from "./about";
-import User from "./user";
-import Blog from "./blog";
+import About from "./Manager/about";
+import User from "./Manager/user";
+import Blog from "./Manager/blog";
 // import './Manage/manager.css'
 
 export default class Manager extends Component {

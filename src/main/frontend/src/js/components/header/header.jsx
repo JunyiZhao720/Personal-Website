@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from './Header/navBar';
+import NavBar from '../home/navBar';
 import { withRouter } from 'react-router-dom';
 
 const _Header = (props) => {

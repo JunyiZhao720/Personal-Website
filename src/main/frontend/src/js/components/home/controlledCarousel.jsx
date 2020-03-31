@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import ajax from '../../Api/ajax'
 import axios from 'axios'
 
 function ControlledCarousel() {
     const [index, setIndex] = useState(0);
-    const [direction, setDirection] = useState(null);
 
     let initializeNews = [];
     for(let i=0; i<3; i++) {

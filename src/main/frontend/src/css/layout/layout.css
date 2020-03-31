@@ -1,0 +1,14 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(50, 50, 50);
+}
+
+.main-container {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  margin: 0px 165px;
+}
+

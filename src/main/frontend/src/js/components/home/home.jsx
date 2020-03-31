@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CustomizedTransition from './customizedTransition';
-import Header from './header';
+import Header from '../header/header';
 
 class Home extends Component {
     state = {
