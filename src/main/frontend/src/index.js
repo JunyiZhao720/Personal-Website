@@ -7,17 +7,18 @@ import './css/layout/layout.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import './App.css';
-import Login from "./js/containers/login/login";
-const store = configureStore();
+// const store = configureStore();
 
-ReactDOM.render(
-<Provider store={store}>
-    <HashRouter>
+// ReactDOM.render(
+// <Provider store={store}>
+//     <HashRouter>
 
-        <Switch>
+//         <Switch>
 
-            <Route path = '/login' component={Login}/>
-            <Route component={App}/>
-        </Switch>
-    </HashRouter>
-  </Provider>, document.getElementById('root'));
+//             <Route path = '/login' component={Login}/>
+//             <Route component={App}/>
+//         </Switch>
+//     </HashRouter>
+//   </Provider>, document.getElementById('root'));
+
+ReactDOM.render(<App />,document.getElementById('root'));
