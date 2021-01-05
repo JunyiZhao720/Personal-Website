@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "@types/react-transition-group": "^4.2.4",
     "antd": "^4.1.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "highlight": "^0.2.4",
     "js-cookies": "^1.0.4",
